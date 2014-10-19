@@ -11,7 +11,6 @@ function npfg_display_main(){
 
 function npfg_load_theme(){
 	global $context;
-	log_error(print_r($context, true));
 	if(we::$is_guest && $context['action'] == 'printpage'){ // If user is guest, and action is printpage, abort it
 		redirectexit();
 	}	
